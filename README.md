@@ -31,16 +31,17 @@ const user = username
 const password = password
 
 await tapo_camera.setup(ip, user, password)
-		.catch(error => 
-			console.log(error)
-		)
-		.then(data => 
-      console.log(data)
-		)
+.catch(error => 
+	console.log(error)
+)
+.then(data => 
+	console.log(data)
+)
 ```
 
 # API
 
+```
 // Get details from camera's status
 tapo_camera.getInfo()
 
@@ -49,6 +50,7 @@ tapo_camera.set()
 
 // Make camera do a certain action
 tapo_camera.do()
+```
 
 # Disclaimer
 Please keep in mind that this package is not official and I do not have any affiliation with TP-Link or Tapo.
