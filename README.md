@@ -7,11 +7,15 @@ Npm package to facilitate communication with TP Link Tapo cameras.
 
 # Installing
 
-`` npm install npm-tapo-camera
+```
+npm install npm-tapo-camera
+```
 
 or
 
-`` yarn add npm-tapo-camera
+```
+yarn add npm-tapo-camera
+```
 
 # Usage
 
