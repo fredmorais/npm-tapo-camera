@@ -56,7 +56,7 @@ await tapo_camera.getInfo()
 ```
 await tapo_camera.set(Object controls)
 ```
-Controls object details:
+Controls:
 
 - osd: Object
   - {
@@ -96,7 +96,12 @@ await tapo_camera.set({
   autoTrackTarget: false
 })
 ```
-Controls object details:
+
+## Make camera do a certain action
+```
+await tapo_camera.do(Object controls)
+```
+Controls:
 
 - moveMotor: Object
   - {
@@ -112,13 +117,6 @@ Controls object details:
 - setPreset: Number ['Preset's id']
 
 * For these fields the value does not matter, what matters is that the key is present in the controls' Object.
-
-## Make camera do a certain action
-```
-await tapo_camera.do(Object controls)
-```
-Options
-
 
 ###### Example
 ```
