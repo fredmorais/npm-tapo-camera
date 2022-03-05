@@ -27,8 +27,8 @@ const tapo_camera = require('npm-tapo-camera')
 const ip = '192.168.1.1'
 
 // Use credentials from Advanced Settings -> Camera Account
-const user = username
-const password = password
+const user = 'username'
+const password = 'password'
 
 await tapo_camera.setup(ip, user, password)
 .catch(error => 
@@ -58,19 +58,21 @@ await tapo_camera.set(Object controls)
 ```
 List of fields:
 
--osd: Object {
-  test: 123
-}
--privacyMode: Boolean
--alarm: Object {
-  test: 132
-}
--led: Boolean
--dayNightMode: String ['off', 'on', 'auto']
--motionDetection: Boolean
--autoTrackTarget: Boolean
--lensDistortionCorrection: Boolean
--imageFlipVertical: Boolean
+- osd: Object
+  - {
+    test: 123
+  }
+- privacyMode: Boolean
+- alarm: Object 
+  - {
+      test: 132
+    }
+- led: Boolean
+- dayNightMode: String ['off', 'on', 'auto']
+- motionDetection: Boolean
+- autoTrackTarget: Boolean
+- lensDistortionCorrection: Boolean
+- imageFlipVertical: Boolean
 
 ###### Example
 ```
