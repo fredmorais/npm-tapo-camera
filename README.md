@@ -116,7 +116,7 @@ Controls:
 - deletePreset: Number ['Preset's id']
 - setPreset: Number ['Preset's id']
 
-* For these fields the value does not matter, what matters is that the key is present in the controls' Object.
+*For these fields the value does not matter, what matters is that the key is present in the controls' Object.
 
 ###### Example
 ```
