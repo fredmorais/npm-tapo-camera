@@ -43,35 +43,58 @@ await tapo_camera.setup(ip, user, password)
 
 ## Get details from camera's status
 ```
-tapo_camera.getInfo()
+await tapo_camera.getInfo()
+.then(data => {
+  console.log(data)
+})
+.catch(error => {
+  console.log(error)
+})
 ```
-###### Example
-```
-tapo_camera.do(Object controls)
-```
-
 
 ## Set camera's parameters
 ```
-tapo_camera.set(Object controls)
+await tapo_camera.set(Object controls)
 ```
-fields
+List of fields:
+
+-osd: Object {
+  test: 123
+}
+-privacyMode: Boolean
+-alarm: Object {
+  test: 132
+}
+-led: Boolean
+-dayNightMode: String ['off', 'on', 'auto']
+-motionDetection: Boolean
+-autoTrackTarget: Boolean
+-lensDistortionCorrection: Boolean
+-imageFlipVertical: Boolean
 
 ###### Example
 ```
-tapo_camera.do(Object controls)
+await tapo_camera.set({
+  led: true,
+  autoTrackTarget: false
+})
 ```
 
 ## Make camera do a certain action
 ```
-tapo_camera.do(Object controls)
+await tapo_camera.do(Object controls)
 ```
 Options
 
 
 ###### Example
 ```
-tapo_camera.do(Object controls)
+await tapo_camera.do({
+  moveMotor: {
+    x: 10,
+    y: -20
+  }
+})
 ```
 
 # Disclaimer
