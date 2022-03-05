@@ -56,16 +56,31 @@ await tapo_camera.getInfo()
 ```
 await tapo_camera.set(Object controls)
 ```
-List of fields:
+Controls object details:
 
 - osd: Object
   - {
-    test: 123
+    date: {
+      enabled: Boolean,
+      x: Number,
+      y: Number
+    },
+    week: {
+      enabled: Boolean,
+      x: Number,
+      y: Number
+     },
+    label1: {
+      enabled: Boolean,
+      x: Number,
+      y: Number
+    }
   }
 - privacyMode: Boolean
 - alarm: Object 
   - {
-      test: 132
+      enabled: Boolean,
+      alarm: String ['sound', 'light']
     }
 - led: Boolean
 - dayNightMode: String ['off', 'on', 'auto']
@@ -81,6 +96,22 @@ await tapo_camera.set({
   autoTrackTarget: false
 })
 ```
+Controls object details:
+
+- moveMotor: Object
+  - {
+    x: Number,
+    y: Number
+  } 
+- moveMotorStep: Number
+- calibrateMotor: Anything *
+- format: Anything *
+- reboot: Anything *
+- savePreset: String ['Name of the preset']
+- deletePreset: Number ['Preset's id']
+- setPreset: Number ['Preset's id']
+
+* For these fields the value does not matter, what matters is that the key is present in the controls' Object.
 
 ## Make camera do a certain action
 ```
