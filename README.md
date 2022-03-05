@@ -32,24 +32,46 @@ const password = password
 
 await tapo_camera.setup(ip, user, password)
 .catch(error => 
-	console.log(error)
+  console.log(error)
 )
 .then(data => 
-	console.log(data)
+  console.log(data)
 )
 ```
 
 # API
 
+## Get details from camera's status
 ```
-// Get details from camera's status
 tapo_camera.getInfo()
+```
+###### Example
+```
+tapo_camera.do(Object controls)
+```
 
-// Set camera's parameters
-tapo_camera.set()
 
-// Make camera do a certain action
-tapo_camera.do()
+## Set camera's parameters
+```
+tapo_camera.set(Object controls)
+```
+fields
+
+###### Example
+```
+tapo_camera.do(Object controls)
+```
+
+## Make camera do a certain action
+```
+tapo_camera.do(Object controls)
+```
+Options
+
+
+###### Example
+```
+tapo_camera.do(Object controls)
 ```
 
 # Disclaimer
