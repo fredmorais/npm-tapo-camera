@@ -1,6 +1,6 @@
 {
   "name": "npm-tapo-camera",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Npm package to facilitate communication with TP Link Tapo cameras.",
   "main": "index.js",
   "dependencies": {
