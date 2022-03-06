@@ -115,8 +115,8 @@ Controls:
 - format: Anything *
 - reboot: Anything *
 - savePreset: String ['Name of the preset']
-- deletePreset: Number ['Preset's id']
-- setPreset: Number ['Preset's id']
+- deletePreset: String ['Preset's id']
+- setPreset: String ['Preset's id']
 
 *For these fields the value does not matter, what matters is that the key is present in the controls' Object.
 
