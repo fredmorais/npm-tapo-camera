@@ -24,13 +24,15 @@ yarn add npm-tapo-camera
 ```
 const tapo_camera = require('npm-tapo-camera')
 
-const ip = '192.168.1.1'
-
 // Use credentials from Advanced Settings -> Camera Account
 const user = 'username'
 const password = 'password'
 
+const ip = '192.168.1.1'
+
 await tapo_camera.setup(ip, user, password)
+
+await tapo_camera.getInfo()
 .catch(error => 
   console.log(error)
 )

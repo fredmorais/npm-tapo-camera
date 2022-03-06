@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 const utf8 = require('utf8')
-const axios = require('../Hub/backend/src/pluginsDisabled/tapo_camera/node-tapo-camera/node_modules/axios')
+const axios = require('axios')
 const https = require('https')
 
 function Tapo() {
