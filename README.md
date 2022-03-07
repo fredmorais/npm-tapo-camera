@@ -9,19 +9,19 @@ This library was based on PyTapo by @JurajNyiri!
 
 # Installing
 
-```
+```ts
 npm install npm-tapo-camera
 ```
 
 or
 
-```
+```js
 yarn add npm-tapo-camera
 ```
 
 # Usage
 
-```
+```ts
 const tapo_camera = require('npm-tapo-camera')
 
 // Use credentials from Advanced Settings -> Camera Account
@@ -44,7 +44,7 @@ await tapo_camera.getInfo()
 # API
 
 ## Get details from camera's status
-```
+```ts
 await tapo_camera.getInfo()
 .then(data => {
   console.log(data)
@@ -55,7 +55,7 @@ await tapo_camera.getInfo()
 ```
 
 ## Set camera's parameters
-```
+```ts
 await tapo_camera.set(Object controls)
 ```
 Controls:
@@ -92,7 +92,7 @@ Controls:
 - imageFlipVertical: Boolean
 
 ###### Example
-```
+```ts
 await tapo_camera.set({
   led: true,
   autoTrackTarget: false
@@ -100,7 +100,7 @@ await tapo_camera.set({
 ```
 
 ## Make camera do a certain action
-```
+```ts
 await tapo_camera.do(Object controls)
 ```
 Controls:
@@ -121,7 +121,7 @@ Controls:
 *For these fields the value does not matter, what matters is that the key is present in the controls' Object.
 
 ###### Example
-```
+```ts
 await tapo_camera.do({
   moveMotor: {
     x: 10,
