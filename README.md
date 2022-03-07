@@ -15,13 +15,13 @@ npm install npm-tapo-camera
 
 or
 
-```js
+```ts
 yarn add npm-tapo-camera
 ```
 
 # Usage
 
-```ts
+```js
 const tapo_camera = require('npm-tapo-camera')
 
 // Use credentials from Advanced Settings -> Camera Account
